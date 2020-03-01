@@ -406,6 +406,9 @@ class Assistant(object):
             'extraParam': '{"originid":"1"}',  # get error stock state without this param
             'cat': cat,  # get 403 Forbidden without this param (obtained from the detail page)
             # 'venderId': ''  # won't return seller information without this param (can be ignored)
+            'fqsp':0,
+            'pdpin':'cwx1568',
+            'pduid':'154924751612425996760'
         }
         headers = {
             'User-Agent': USER_AGENT,

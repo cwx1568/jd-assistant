@@ -10,8 +10,14 @@ if __name__ == '__main__':
 
     asst = Assistant()  # 初始化
     asst.login_by_QRcode()  # 扫码登陆
-    asst.clear_cart()
-    asst.exec_reserve_seckill_by_time(sku_id="100009083498", buy_time="2019-11-10 22:42:30.000")
+    # asst.clear_cart()
+    # asst.add_item_to_cart(sku_ids='32275966268')
+    # asst.submit_order()
+    asst.submit_order_by_time(buy_time='2019-12-12 10:16:59.500', retry=10000, interval=5)
+
+    # asst.submit_order_by_stock(sku_ids='32275966268', area='2_2824_51917_0')
+
+    # asst.exec_reserve_seckill_by_time(sku_id="32275966272", buy_time="2019-11-10 22:42:30.000")
     # 执行预约抢购
     # 5个参数
     # sku_id: 商品id
